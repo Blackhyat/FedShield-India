@@ -8,11 +8,15 @@ import secrets
 import re
 import json
 import os
+from dotenv import load_dotenv
 import pandas as pd
 
 from pathlib import Path
 from datetime import datetime
+load_dotenv()
 
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 # =========================================================
 # 1. CONFIGURATION
