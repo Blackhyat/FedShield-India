@@ -37,9 +37,9 @@ DB_PATH = Path(
     )
 )
 
-BACKEND_URL = os.getenv(
+API_URL = os.getenv(
     "FEDSHIELD_API_URL",
-    "https://fedshield-backend.onrender.com"
+    "http://127.0.0.1:8000/analyze"
 )
 
 
