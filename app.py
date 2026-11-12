@@ -1,4 +1,3 @@
-
 import streamlit as st
 import requests
 import sqlite3
@@ -40,7 +39,7 @@ DB_PATH = Path(
 
 API_URL = os.getenv(
     "FEDSHIELD_API_URL",
-    "https://fedshield-backend.onrender.com/analyze"
+    "http://127.0.0.1:8000/analyze"
 )
 
 
